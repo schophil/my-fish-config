@@ -1,0 +1,8 @@
+/completions/
+/functions/
+/themes/
+
+/fish_variables
+/conf.d/*
+/conf.d/*.*
+!/conf.d/schophil.fish
