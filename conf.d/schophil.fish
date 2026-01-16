@@ -2,15 +2,24 @@
 function minstall
 	./mvnw install
 end
+function develop
+	git checkout develop
+end
+function master
+	git checkout master
+end
 
 # AIV specific
 function awstools
 	docker run --rm -ti -v ~/.aws:/root/.aws mbp/aws
 end
 
+function gitaivconfig
+	git config --local user.email "philippe.schottey@vlaanderen.be"
+	git config --local user.name "Philippe Schottey"
+end
 
 # PHP tools
-
 function hash
 	php /home/schophil/systemconfig/tools/public/hash.php $argv
 end
