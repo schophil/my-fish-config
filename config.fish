@@ -21,6 +21,9 @@ function check-ssh-agent
     end
 end
 
+
+set -x BROWSER "/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     check-ssh-agent
