@@ -19,6 +19,11 @@ function gitaivconfig
 	git config --local user.name "Philippe Schottey"
 end
 
+function gitdefaultconfig
+	git config --local user.email "schophil@proton.me"
+	git config --local user.name "Philippe Schottey"
+end
+
 # PHP tools
 function hash
 	php /home/schophil/systemconfig/tools/public/hash.php $argv
@@ -26,6 +31,10 @@ end
 
 function rrngen
 	php /home/schophil/systemconfig/tools/public/generate_rrn.php $argv
+end
+
+function rrnvalidate
+	php /home/schophil/systemconfig/tools/public/validate_rrn.php $argv
 end
 
 function base64decode

@@ -23,6 +23,7 @@ end
 
 
 set -x BROWSER "/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe"
+set -x EDITOR "vim"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
@@ -30,3 +31,4 @@ if status is-interactive
 end
 
 fish_add_path ~/bin
+fish_add_path /home/schophil/.local/bin
